@@ -1,0 +1,57 @@
+.activity {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.activity__title {
+    margin-top:0;
+    padding-top: 0;
+    margin-bottom: 50px;
+
+    text-align: center;
+    text-transform: unset;
+
+    color: $dark-color;
+    font-weight: 700;
+    font-size: $activity-title-fsize;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+.activity__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.activity__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.activity__item {
+    position: relative;
+}
+
+.activity__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+
+    background: $activity-wrap-bg;
+}
+
+.activity__label {
+    font-weight: 700;
+    font-size: $activity-label-fsize;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $white-color;
+}

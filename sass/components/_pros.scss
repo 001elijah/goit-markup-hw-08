@@ -1,0 +1,50 @@
+.pros {
+    padding-top: 94px;
+    padding-bottom: 0;
+}
+
+.pros__list {
+    display: flex;
+    gap: 30px;
+}
+
+.pros__thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+
+    border-radius: 4px;
+    background-color: $offwhite-color;
+}
+
+.pros__icon {
+    width: 70px;
+    height: 70px;
+}
+
+.pros__title {
+    display: block;
+    width: 270px;
+    margin-top:0;
+    margin-bottom: 10px;
+
+    color: $dark-color;
+    font-weight: 700;
+    font-size: $pros-title-fsize;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.pros__text {
+    display: block;
+    width: 270px;
+    font-weight: 400;
+    font-size: $pros-text-fsize;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}

@@ -1,0 +1,63 @@
+$dark-color: #212121;
+$grey-color: #757575;
+$accent-color: #2196F3;
+$white-color: #FFFFFF;
+$offwhite-color: #F5F4FA;
+$dark-bgcolor: #2F303A;
+
+$transition-time-and-cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$common-font: 'Roboto', sans-serif;
+$common-font-color: $grey-color;
+
+$logo-font: 'Raleway', sans-serif;
+$logo-mar-right: 93px;
+$logo-fsize: 26px;
+$logo-lheight: 1.2;
+$logo-lspacing: 0.03em;
+
+$header-fweight: 500;
+$header-fsize: 14px;
+$header-lheight: 1.14;
+$header-lspacing: 0.02em;
+$header-border-color: #ececec;
+
+$hero-title-fweight: 900;
+$hero-title-fsize: 44px;
+$hero-title-lheight: 1.36;
+$hero-title-lspacing: 0.06em;
+$hero-bgcolor: #C4C4C4;
+$hero-bg-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg.jpg);
+
+$button-fweight: 700;
+$button-fsize: 16px;
+$button-lheight: 1.88;
+$button-lspacing: 0.06em;
+$button-width: 216px;
+$button-height: 50px;
+$button-bradius: 4px;
+
+$pros-title-fsize: 14px;
+$pros-text-fsize: 14px;
+
+$activity-title-fsize: 36px;
+$activity-label-fsize: 14px;
+$activity-wrap-bg: rgba(47, 48, 58, 0.8);
+
+$team-title-fsize: 36px;
+$team-card-bradius: 0px 0px 4px 4px;
+$team-social-btn-radius: 50%;
+
+$customers-bradius: 4px;
+
+$footer-fsize: 14px;
+$footer-contact-color: rgba(255, 255, 255, 0.6);
+$footer-social-btn-radius: 50%;
+$footer-input-color: rgba(255, 255, 255, 0.6);
+$footer-placeholder-color: rgba(255, 255, 255, 0.3);
+
+$backdrop-color: rgba(0, 0, 0, 0.2);

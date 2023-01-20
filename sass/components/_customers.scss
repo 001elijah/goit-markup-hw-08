@@ -1,0 +1,54 @@
+.customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.customers__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customers__title {
+    margin-top:0;
+    padding-top: 0;
+    margin-bottom: 50px;
+
+    text-align: center;
+    text-transform: unset;
+
+    color: $dark-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+.customers__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid #AFB1B8;
+    border-radius: $customers-bradius;
+    background-color: $white-color;
+
+    color: #AFB1B8;
+    
+    transition: border-color $transition-time-and-cubic;
+    transition: color $transition-time-and-cubic;
+
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
+        color: $accent-color;
+    }
+
+}
+
+.customers__logo {
+    --color3: currentColor;
+    transition: --color3 $transition-time-and-cubic;
+}

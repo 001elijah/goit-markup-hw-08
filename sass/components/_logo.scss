@@ -1,0 +1,29 @@
+.header__logo {
+    display: block;
+}
+
+.header__logo--blue {
+    color: $accent-color;
+}
+
+.header__logo--dark {
+    color: $dark-color;
+}
+
+.header__logo {
+    display: block;
+
+    margin-right: $logo-mar-right;
+}
+
+.header__logo,
+.footer__logo,
+.header__logo--blue,
+.header__logo--dark,
+.footer__logo--white {
+    text-decoration: none;
+    font-family: $logo-font;
+    font-size: $logo-fsize;
+    line-height: $logo-lheight;
+    letter-spacing: $logo-lspacing;
+}
