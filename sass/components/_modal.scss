@@ -42,6 +42,11 @@
     
     transform: translate(-50%, -50%) scale(1);
     transition: transform $transition-time-and-cubic;
+    @media screen and (max-width: 767px) {
+        width: calc(100% - 15px);
+        height: auto;
+        max-height: calc(100% - 10px);
+    }
 }
 
 .modal__button-close {
@@ -87,6 +92,10 @@
     letter-spacing: 0.03em;
 
     color: $dark-color;
+    @media screen and (max-width: 767px) {
+        display: inline-block;
+        width: 100%;
+    }
 }
 
 .modal__wrap {
@@ -95,6 +104,10 @@
 
     width: 448px;
     height: 342px;
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .modal__form-wrap {
@@ -114,6 +127,9 @@
     &:hover .modal__form-comment {
         border-color: $accent-color;
     }
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
 }
 
 
@@ -125,6 +141,7 @@
 .modal__form-label {
     display: block;
     margin-bottom: 4px;
+    width: 100%;
 
     font-weight: 400;
     font-size: 12px;
@@ -135,7 +152,7 @@
 
 .modal__form-input {
 
-    width: 448px;
+    width: 100%;
     height: 40px;
 
     font: inherit;
@@ -160,7 +177,7 @@
 }
 
 .modal__form-comment {
-    width: 448px;
+    width: 100%;
     height: 120px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -184,6 +201,8 @@
     justify-content: center;
     align-items: center;
 
+    width: 100%;
+
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -196,6 +215,9 @@
     letter-spacing: 0.03em;
 
     color: #757575;
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+    }
 }
 
 .modal__form-checkbox {
@@ -238,6 +260,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 65px;
 
     color: $white-color;
     font-weight: 700;
@@ -246,7 +269,7 @@
     
     background-color: $accent-color;
 
-    min-width: 216px;
+    min-width: 200px;
     min-height: 50px;
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -255,5 +278,8 @@
 
     &:hover {
         cursor: pointer;
+    }
+    @media screen and (max-width: 767px) {
+        margin-top: 0;
     }
 }

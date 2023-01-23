@@ -1107,6 +1107,13 @@ video {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 767px) {
+  .modal {
+    width: calc(100% - 15px);
+    height: auto;
+    max-height: calc(100% - 10px);
+  }
+}
 
 .modal__button-close {
   display: -webkit-box;
@@ -1150,11 +1157,23 @@ video {
   letter-spacing: 0.03em;
   color: #212121;
 }
+@media screen and (max-width: 767px) {
+  .modal__title {
+    display: inline-block;
+    width: 100%;
+  }
+}
 
 .modal__wrap {
   margin: 0 auto;
   width: 448px;
   height: 342px;
+}
+@media screen and (max-width: 767px) {
+  .modal__wrap {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .modal__form-wrap {
@@ -1170,6 +1189,11 @@ video {
 .modal__form-wrap:hover .modal__form-input, .modal__form-wrap:hover .modal__form-comment {
   border-color: #2196F3;
 }
+@media screen and (max-width: 767px) {
+  .modal__form-wrap {
+    width: 100%;
+  }
+}
 
 /* Схоже, що це костиль((( */
 .modal__form-field--last {
@@ -1179,6 +1203,7 @@ video {
 .modal__form-label {
   display: block;
   margin-bottom: 4px;
+  width: 100%;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -1186,7 +1211,7 @@ video {
 }
 
 .modal__form-input {
-  width: 448px;
+  width: 100%;
   height: 40px;
   font: inherit;
   padding-left: 42px;
@@ -1207,7 +1232,7 @@ video {
 }
 
 .modal__form-comment {
-  width: 448px;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1231,6 +1256,7 @@ video {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
@@ -1240,6 +1266,11 @@ video {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (max-width: 767px) {
+  .modal__form-policy {
+    font-size: 12px;
+  }
 }
 
 .modal__form-checkbox {
@@ -1277,12 +1308,13 @@ video {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 65px;
   color: #FFFFFF;
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
   background-color: #2196F3;
-  min-width: 216px;
+  min-width: 200px;
   min-height: 50px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1291,6 +1323,11 @@ video {
 }
 .modal__button:hover {
   cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .modal__button {
+    margin-top: 0;
+  }
 }
 
 .portfolio {
