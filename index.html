@@ -14,14 +14,10 @@
 </head>
 
 <body class="page">
-    <header class="header">
+    <!-- <header class="header">
         <div class="container">
             <div class="header__wrap">
-                <!-- WebStudio Logo —- include "img" (in case of logo) or text (in case of formatted text) into "a"
-                    because normally users use it to return to a home page-->
-                    <!-- tag nav is also for "logo" -->
                 <nav class="header__vavigation">
-                    <!-- Navigation -->
                     <a class="header__logo" href="./index.html">
                         <span class="header__logo--blue">Web</span><span class="header__logo--dark">Studio</span>
                     </a>
@@ -43,7 +39,6 @@
                         </li>
                     </ul>
                 </nav>
-                <!-- Contacts List -->
                 <ul class="list--reset header__contact-nav header__contact-wrap">
                     <li class="header__contact-item">
                         <a class="header__contact-link" href="mailto:info@devstudio.com">
@@ -67,24 +62,18 @@
             </div>
         </div>
         
-    </header>
+    </header> -->
     <!-- Unique Page Content -->
     <main>
-    <!-- add section within block div because it is a separate section -->
         <section class="hero">
             <div class="container">
-                <!-- if u c that a part of a string begins from a new string simply use "br" -->
                 <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
                 <button class="hero__button" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
-        <!-- one block for the next two sections(?) -->
-            <!-- use "section" when you see homogeneous content for semantics -->
         <section class="pros">
             <div class="container">
-                <!-- sometimes there can be no header in a section. adding a header to it (h2 below) improves semantics -->
                 <h2 class="heading--hide">Наші переваги</h2>
-                <!-- use "ul" if you see several similar elements repeating in a row -->
                 <ul class="list--reset pros__list">
                     <li>
                         <div class="pros__thumb">
@@ -125,11 +114,9 @@
                 </ul>
             </div>
         </section>
-        <!-- what we do section -->
         <section class="activity">
             <div class="container">
                 <h2 class="activity__title">Чим ми займаємося</h2>
-                <!-- use "ul" if u see several similar elements repeating in a row -->
                 <ul class="list--reset activity__list">
                     <li class="activity__item">
                         <img class="activity__image" src="images/box1.jpg" alt="Activity Picture" width="370">
@@ -158,11 +145,9 @@
                 </ul>  
             </div>  
         </section>
-            <!-- add "our team" section -->
         <section class="team">
             <div class="container">
                 <h2 class="team__title team__title--big">Наша команда</h2>
-                <!-- use "ul" if u see several similar elements repeating in a row -->
                 <ul class="list--reset team__list">
                     <li class="team__card">
                         <img class="team__member-photo" src="images/ihor.jpg" alt="Photo of Ihor D." width="270">
@@ -204,8 +189,8 @@
                     <li class="team__card">
                         <img class="team__member-photo" src="images/olha.jpg" alt="Photo of Olha R." width="270">
                         <div class="team__card-wrap">
-                            <h3 class="team__member-name">Микола Тарасов</h3>
-                            <p class="team__member-position">Marketing</p>
+                            <h3 class="team__member-name">Ольга Рєпіна</h3>
+                            <p class="team__member-position">Frontend Developer</p>
                             <ul class="list--reset team__member-socials">
                                 <li class="team__member-social">
                                     <a class="team__social-link" href="" aria-label="instagram">
@@ -241,8 +226,8 @@
                     <li class="team__card">
                         <img class="team__member-photo" src="images/mykola.jpg" alt="Photo of Mykola T." width="270">
                         <div class="team__card-wrap">
-                            <h3 class="team__member-name">Михайло Єрмаков</h3>
-                            <p class="team__member-position">UI Designer</p>
+                            <h3 class="team__member-name">Микола Тарасов</h3>
+                            <p class="team__member-position">Marketing</p>
                             <ul class="list--reset team__member-socials">
                                 <li class="team__member-social">
                                     <a class="team__social-link" href="" aria-label="instagram">
@@ -276,10 +261,10 @@
                         </div>
                     </li>
                     <li class="team__card">
-                        <img class="team__member-photo" src="images/mykhailo.jpg" alt="Photo of Mykhailo Y." width="270">
+                        <img class="team__member-photo" src="images/mykhailo.jpg" alt="Photo of Mykhailo Y.">
                         <div class="team__card-wrap">
-                            <h3 class="team__member-name">Ігор Дем'яненко</h3>
-                            <p class="team__member-position">Product Designer</p>
+                            <h3 class="team__member-name">Михайло Єрмаков</h3>
+                            <p class="team__member-position">UI Designer</p>
                             <ul class="list--reset team__member-socials">
                                 <li class="team__member-social">
                                     <a class="team__social-link" href="" aria-label="instagram">
@@ -315,7 +300,6 @@
                 </ul>
             </div>
         </section>
-        <!-- customers section -->
         <section class="customers">
             <div class="container">
                 <h2 class="customers__title customers__title--big">Постійні клієнти</h2>
@@ -416,7 +400,7 @@
             <div class="footer__subscribtion">
                 <p class="footer__subscribtion-header">Підпишіться на розсилку</p>
                 <form class="footer__form--wrap" name="subscription-form" autocomplete="on" novalidate>
-                    <label>
+                    <label class="footer__label--stylish">
                         <input class="footer__input--stylish" type="email" name="email" placeholder="E-mail">
                     </label>
                     <button class="footer__subscribe-button" type="submit">
@@ -429,7 +413,7 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal__button-close" data-modal-close>
                 <svg class="modal__close-icon" width="11px" height="11px">
@@ -476,6 +460,6 @@
             </form>
         </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> -->
 </body>
 </html>

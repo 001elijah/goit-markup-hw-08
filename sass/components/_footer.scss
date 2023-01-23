@@ -1,12 +1,28 @@
 .footer {
-    background-color: $dark-bgcolor;
+    max-width: 480px;
     padding-top: 60px;
     padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $dark-bgcolor;
+    @media screen and (min-width: 768px) {
+        max-width: none;
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        width: auto;
+    }
 }
 
 .footer__wrap {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
 }
 
 .footer__logo {
@@ -14,6 +30,11 @@
     text-decoration: none;
     margin-bottom: 20px;
     width: 145px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 1200px) {
+        margin-left: 0;
+    }
 }
 
 .footer__logo--blue {
@@ -26,7 +47,7 @@
 
 .footer__address-entry {
     display: block;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 
     color: $white-color;
     font-style: normal;
@@ -39,9 +60,23 @@
 
 .footer__contact-item:not(:last-child) {
     display: block;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
+.footer__contact-item {
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
+}
+.footer__contacts {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
 
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+    }
+}
 .footer__contact {
     color: $footer-contact-color;
     font-style: normal;
@@ -59,12 +94,20 @@
 }
 
 .footer__socials {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        margin-left: 70px;
+        margin-right: 0;
+    }
 }
 
 .footer__socials-header {
     margin-bottom: 20px;
 
+    text-align: center;
     font-weight: 700;
     font-size: $footer-fsize;
     line-height: 1.14;
@@ -72,6 +115,9 @@
     text-transform: uppercase;
 
     color: $white-color;
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
 }
 
 .footer__socials-list {
@@ -99,10 +145,22 @@
         background-color: $accent-color;
     }
 }
-
+.footer__subscribtion {
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 768px) {
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 570px;
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
 .footer__subscribtion-header {
-    display: flex;
-    flex-direction: column;
+    text-align: center;
 
     font-weight: 700;
     font-size: $footer-fsize;
@@ -111,17 +169,37 @@
     text-transform: uppercase;
 
     color: $white-color;
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
 }
 
 .footer__form--wrap {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 20px;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+        gap: 12px;
+    }
+    
 }
 
+.footer__label--stylish {
+    width: 100%;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
+}
 .footer__input--stylish {
-    width: 358px;
+    width: 100%;
     height: 50px;
-    margin-right: 12px;
+    margin-bottom: 20px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -131,6 +209,12 @@
 
     color: $footer-input-color;
     padding-left: 16px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
 }
 
 ::placeholder {
@@ -142,6 +226,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
 
     font-size: $button-fsize;
     font-weight: $button-fweight;
@@ -160,6 +247,10 @@
 
     &:hover {
         cursor: pointer;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 200px;
+        height: 50px;
     }
 }
 

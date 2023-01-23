@@ -1,13 +1,22 @@
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    max-width: 480px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: $offwhite-color;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 768px) {
+        max-width: none;
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        width: auto;
+    }
 }
 
 .team__title {
-    margin-top:0;
-    padding-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     text-align: center;
     text-transform: unset;
@@ -15,39 +24,55 @@
     color: $dark-color;
     font-weight: 700;
     font-size: $team-title-fsize;
-    line-height: 1.17;
+    line-height: calc(33/28);
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        line-height: calc(42/36);
+    }
 }
 
 .team__list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    @media screen and (min-width: 768px) {
+        width: 100%;
+        justify-content: none;
+    }
 }
 
 .team__card {
+    width: 100%;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: $team-card-bradius;
     background: $white-color;
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 270px;
+    }
 }
 
 .team__member-photo {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
 .team__card-wrap {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
 }
 
 .team__member-name {
     display: block;
     margin-bottom: 10px;
     text-align: center;
-}
 
-.team__member-name {
     color: $dark-color;
     font-weight: 500;
     font-size: 16px;
@@ -57,9 +82,7 @@
 
 .team__member-position {
     text-align: center;
-}
 
-.team__member-position {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -68,10 +91,11 @@
 
 .team__member-socials {
     display: flex;
-    justify-content: space-between;
-    margin-left: 32px;
-    margin-right: 32px;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 16px;
+    justify-content: center;
 }
 
 .team__social-link {

@@ -1,11 +1,34 @@
 .pros {
-    padding-top: 94px;
-    padding-bottom: 0;
+    max-width: 480px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 768px) {
+        max-width: none;
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        width: auto;
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .pros__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
+    @media screen and (min-width: 768px) {
+        width: 100%;
+        justify-content: none;
+    }
+    // @media screen and (min-width: 1200px) {
+    //     width: 100%;
+    //     justify-content: none;
+    // }
 }
 
 .pros__thumb {
@@ -13,12 +36,20 @@
     align-items: center;
     justify-content: center;
 
-    width: 270px;
+    max-width: 450px;
     height: 120px;
     margin-bottom: 30px;
 
     border-radius: 4px;
     background-color: $offwhite-color;
+    @media screen and (min-width: 768px) {
+        max-width: none;
+        width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: none;
+        width: 270px;
+    }
 }
 
 .pros__icon {
@@ -27,24 +58,44 @@
 }
 
 .pros__title {
-    display: block;
-    width: 270px;
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top:0;
     margin-bottom: 10px;
 
+    text-align: center;
     color: $dark-color;
     font-weight: 700;
     font-size: $pros-title-fsize;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+        max-width: none;
+        text-align: start;
+        width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: none;
+        text-align: start;
+        width: 270px;
+    }
 }
 
 .pros__text {
-    display: block;
-    width: 270px;
+    max-width: 450px;
+
     font-weight: 400;
     font-size: $pros-text-fsize;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    @media screen and (min-width: 768px) {
+        max-width: none;
+        width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: none;
+        width: 270px;
+    }
 }
