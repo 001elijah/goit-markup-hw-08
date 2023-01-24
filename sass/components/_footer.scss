@@ -189,8 +189,8 @@
 .footer__label--stylish {
     width: 100%;
     text-align: center;
-    @media screen and (min-width: 768px) {
-        width: 450px;
+    @media screen and (max-width: 1199px) {
+        max-width: 450px;
     }
     @media screen and (min-width: 1200px) {
         width: 358px;

@@ -1174,9 +1174,9 @@ video {
   width: 100%;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .footer__label--stylish {
-    width: 450px;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
