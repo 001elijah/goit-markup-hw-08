@@ -67,15 +67,6 @@
     &:focus .portfolio__card-descr {
         transform: translateY(0);
     }
-    @media screen and (max-width: 767px) {
-        max-width: 450px;
-        max-height: 404px;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        width: 354px;
-        height: 440px;
-    }
-    
 }
 
 .portfolio__card-image {
@@ -90,6 +81,9 @@
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        height: 146px;
+    }
 }
 
 .portfolio__link {
@@ -102,6 +96,10 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        display: block;
+        width: 304px;
+    }
 }
 
 .portfolio__card-type {
@@ -115,6 +113,18 @@
 .portfolio__card-thumb {
     position: relative;
     overflow: hidden;
+    @media screen and (max-width: 767px) {
+        width: 450px;
+        height: 294px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 354px;
+        height: 294px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+        height: 294px;
+    }
 }
 
 .portfolio__card-descr {
