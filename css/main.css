@@ -1620,6 +1620,13 @@ video {
           column-gap: 30px;
   row-gap: 30px;
 }
+@media screen and (max-width: 767px) {
+  .portfolio__works-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .portfolio__card {
   background: #FFFFFF;
@@ -1633,6 +1640,18 @@ video {
 .portfolio__card:hover .portfolio__card-descr, .portfolio__card:focus .portfolio__card-descr {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+@media screen and (max-width: 767px) {
+  .portfolio__card {
+    max-width: 450px;
+    max-height: 404px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__card {
+    width: 354px;
+    height: 440px;
+  }
 }
 
 .portfolio__card-image {

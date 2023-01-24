@@ -49,6 +49,9 @@
     flex-wrap: wrap;
     column-gap: 30px;
     row-gap: 30px;
+    @media screen and (max-width: 767px) {
+        justify-content: center;
+    }
 }
 
 .portfolio__card {
@@ -63,6 +66,14 @@
     &:hover .portfolio__card-descr,
     &:focus .portfolio__card-descr {
         transform: translateY(0);
+    }
+    @media screen and (max-width: 767px) {
+        max-width: 450px;
+        max-height: 404px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 354px;
+        height: 440px;
     }
     
 }
