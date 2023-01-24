@@ -17,11 +17,7 @@
     <header class="header">
         <div class="container">
             <div class="header__wrap">
-                <!-- WebStudio Logo —- include "img" (in case of logo) or text (in case of formatted text) into "a"
-                    because normally users use it to return to a home page-->
-                    <!-- tag nav is also for "logo" -->
                 <nav class="header__vavigation">
-                    <!-- Navigation -->
                     <a class="header__logo" href="./index.html">
                         <span class="header__logo--blue">Web</span><span class="header__logo--dark">Studio</span>
                     </a>
@@ -43,7 +39,6 @@
                         </li>
                     </ul>
                 </nav>
-                <!-- Contacts List -->
                 <ul class="list--reset header__contact-nav header__contact-wrap">
                     <li class="header__contact-item">
                         <a class="header__contact-link" href="mailto:info@devstudio.com">
@@ -64,13 +59,79 @@
                         </a>
                     </li>
                 </ul>
+                <button class="menu-open" type="button" data-menu-open>
+                    <svg class="menu-open__icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
             </div>
         </div>
-        
+        <div class="mob-menu is-hidden" data-menu>
+            <button class="menu-close" type="button" data-menu-close>
+                <svg class="menu-close__icon" width="19" height="19">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <div class="menu-container">
+                <div class="menu-container--top">
+                    <ul class="list--reset mob-menu__nav">
+                        <li class="mob-menu__nav-item">
+                            <a class="mob-menu__nav-link mob-menu__page--current" href="./index.html">
+                                Студія
+                            </a>
+                        </li>
+                        <li class="mob-menu__nav-item">
+                            <a class="mob-menu__nav-link" href="./portfolio.html">
+                                Портфоліо
+                            </a>
+                        </li>
+                        <li class="mob-menu__nav-item">
+                            <a class="mob-menu__nav-link" href="#contacts" data-menu-close>
+                                Контакти
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-container--bottom">
+                    <ul class="list--reset mob-menu__contact-nav mob-menu__contact-wrap">
+                        <li class="mob-menu__contact-item">
+                            <a class="mob-menu__contact-tel" href="tel:+380961111111">
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                        <li class="mob-menu__contact-item">
+                            <a class="mob-menu__contact-email" href="mailto:info@devstudio.com">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="list--reset mob-socials">
+                        <li class="mob-socials__social">
+                            <a class="mob-socials__social--accent" href="" aria-label="instagram">
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="mob-socials__social">
+                            <a class="mob-socials__social--accent" href="" aria-label="twitter">
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="mob-socials__social">
+                            <a class="mob-socials__social--accent" href="" aria-label="facebook">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="mob-socials__social">
+                            <a class="mob-socials__social--accent" href="" aria-label="linkedin">
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
-    <!-- Unique Page Content -->
     <main>
-    <!-- Фільтр робіт і роботи -->
     <section class="portfolio">
         <div class="container">
             <h1 class="heading--hide">Роботи</h1>

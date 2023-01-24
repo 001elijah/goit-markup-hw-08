@@ -14,10 +14,10 @@
 </head>
 
 <body class="page">
-    <!-- <header class="header">
+    <header class="header">
         <div class="container">
             <div class="header__wrap">
-                <nav class="header__vavigation">
+                <nav class="header__navigation">
                     <a class="header__logo" href="./index.html">
                         <span class="header__logo--blue">Web</span><span class="header__logo--dark">Studio</span>
                     </a>
@@ -59,10 +59,78 @@
                         </a>
                     </li>
                 </ul>
+                <button class="menu-open" type="button" data-menu-open>
+                    <svg class="menu-open__icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
             </div>
         </div>
-        
-    </header> -->
+        <div class="mob-menu is-hidden" data-menu>
+            <button class="menu-close" type="button" data-menu-close>
+                <svg class="menu-close__icon" width="19" height="19">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <div class="menu-container">
+                <div class="menu-container--top">
+                    <ul class="list--reset mob-menu__nav">
+                        <li class="mob-menu__nav-item">
+                            <a class="mob-menu__nav-link mob-menu__page--current" href="./index.html">
+                                Студія
+                            </a>
+                        </li>
+                        <li class="mob-menu__nav-item">
+                            <a class="mob-menu__nav-link" href="./portfolio.html">
+                                Портфоліо
+                            </a>
+                        </li>
+                        <li class="mob-menu__nav-item">
+                            <a class="mob-menu__nav-link" href="#contacts" data-menu-close>
+                                Контакти
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-container--bottom">
+                    <ul class="list--reset mob-menu__contact-nav mob-menu__contact-wrap">
+                        <li class="mob-menu__contact-item">
+                            <a class="mob-menu__contact-tel" href="tel:+380961111111">
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                        <li class="mob-menu__contact-item">
+                            <a class="mob-menu__contact-email" href="mailto:info@devstudio.com">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="list--reset mob-socials">
+                        <li class="mob-socials__social">
+                            <a class="mob-socials__social--accent" href="" aria-label="instagram">
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="mob-socials__social">
+                            <a class="mob-socials__social--accent" href="" aria-label="twitter">
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="mob-socials__social">
+                            <a class="mob-socials__social--accent" href="" aria-label="facebook">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="mob-socials__social">
+                            <a class="mob-socials__social--accent" href="" aria-label="linkedin">
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
     <!-- Unique Page Content -->
     <main>
         <section class="hero">
@@ -150,7 +218,35 @@
                 <h2 class="team__title team__title--big">Наша команда</h2>
                 <ul class="list--reset team__list">
                     <li class="team__card">
-                        <img class="team__member-photo" src="images/ihor.jpg" alt="Photo of Ihor D." width="270">
+                        <picture>
+                            <source
+                                srcset="
+                                ./images/ihor.jpg 1x,
+                                ./images/ihor-2x.jpg 2x
+                            "
+                            media="(min-width: 1200px)"
+                            />
+                            <source
+                                srcset="
+                                ./images/ihor-tab.jpg 1x,
+                                ./images/ihor-tab-2x.jpg 2x
+                            "
+                            media="(min-width: 768px)"
+                            />
+                            <source
+                                srcset="
+                                ./images/ihor-mob.jpg 1x,
+                                ./images/ihor-mob-2x.jpg 2x
+                            "
+                            media="(max-width: 767px)"
+                            />
+                            <img
+                            class="team__member-photo"
+                            src="images/ihor-mob.jpg"
+                            alt="Photo of Ihor D."
+                            width="450"
+                            />
+                        </picture>
                         <div class="team__card-wrap">
                             <h3 class="team__member-name">Ігор Дем'яненко</h3>
                             <p class="team__member-position">Product Designer</p>
@@ -187,7 +283,35 @@
                         </div>
                     </li>
                     <li class="team__card">
-                        <img class="team__member-photo" src="images/olha.jpg" alt="Photo of Olha R." width="270">
+                        <picture>
+                            <source
+                                srcset="
+                                ./images/olha.jpg 1x,
+                                ./images/olha-2x.jpg 2x
+                            "
+                            media="(min-width: 1200px)"
+                            />
+                            <source
+                                srcset="
+                                ./images/olha-tab.jpg 1x,
+                                ./images/olha-tab-2x.jpg 2x
+                            "
+                            media="(min-width: 768px)"
+                            />
+                            <source
+                                srcset="
+                                ./images/olha-mob.jpg 1x,
+                                ./images/olha-mob-2x.jpg 2x
+                            "
+                            media="(max-width: 767px)"
+                            />
+                            <img
+                            class="team__member-photo"
+                            src="images/olha-mob.jpg"
+                            alt="Photo of Olha R."
+                            width="450"
+                            />
+                        </picture>
                         <div class="team__card-wrap">
                             <h3 class="team__member-name">Ольга Рєпіна</h3>
                             <p class="team__member-position">Frontend Developer</p>
@@ -224,7 +348,35 @@
                         </div>
                     </li>
                     <li class="team__card">
-                        <img class="team__member-photo" src="images/mykola.jpg" alt="Photo of Mykola T." width="270">
+                        <picture>
+                            <source
+                                srcset="
+                                ./images/mykola.jpg 1x,
+                                ./images/mykola-2x.jpg 2x
+                            "
+                            media="(min-width: 1200px)"
+                            />
+                            <source
+                                srcset="
+                                ./images/mykola-tab.jpg 1x,
+                                ./images/mykola-tab-2x.jpg 2x
+                            "
+                            media="(min-width: 768px)"
+                            />
+                            <source
+                                srcset="
+                                ./images/mykola-mob.jpg 1x,
+                                ./images/mykola-mob-2x.jpg 2x
+                            "
+                            media="(max-width: 767px)"
+                            />
+                            <img
+                            class="team__member-photo"
+                            src="images/mykola-mob.jpg"
+                            alt="Photo of Mykola T."
+                            width="450"
+                            />
+                        </picture>
                         <div class="team__card-wrap">
                             <h3 class="team__member-name">Микола Тарасов</h3>
                             <p class="team__member-position">Marketing</p>
@@ -261,7 +413,35 @@
                         </div>
                     </li>
                     <li class="team__card">
-                        <img class="team__member-photo" src="images/mykhailo.jpg" alt="Photo of Mykhailo Y.">
+                        <picture>
+                            <source
+                                srcset="
+                                ./images/mykhailo.jpg 1x,
+                                ./images/mykhailo-2x.jpg 2x
+                            "
+                            media="(min-width: 1200px)"
+                            />
+                            <source
+                                srcset="
+                                ./images/mykhailo-tab.jpg 1x,
+                                ./images/mykhailo-tab-2x.jpg 2x
+                            "
+                            media="(min-width: 768px)"
+                            />
+                            <source
+                                srcset="
+                                ./images/mykhailo-mob.jpg 1x,
+                                ./images/mykhailo-mob-2x.jpg 2x
+                            "
+                            media="(max-width: 767px)"
+                            />
+                            <img
+                            class="team__member-photo"
+                            src="images/mykhailo-mob.jpg"
+                            alt="Photo of Mykhailo Y."
+                            width="450"
+                            />
+                        </picture>
                         <div class="team__card-wrap">
                             <h3 class="team__member-name">Михайло Єрмаков</h3>
                             <p class="team__member-position">UI Designer</p>
@@ -461,5 +641,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
