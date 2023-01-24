@@ -1577,6 +1577,15 @@ video {
   margin-bottom: 50px;
   gap: 8px;
 }
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .portfolio__filter {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 @media screen and (max-width: 767px) {
   .portfolio__filter {
     -ms-flex-wrap: wrap;
@@ -1691,7 +1700,12 @@ video {
   position: relative;
   overflow: hidden;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .portfolio__card-thumb {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .portfolio__card-thumb {
     width: 450px;
     height: 294px;
