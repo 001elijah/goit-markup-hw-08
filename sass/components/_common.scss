@@ -1,3 +1,6 @@
+.no-scroll {
+    overflow: hidden;
+}
 .page {
     margin: 0;
     background-color: $white-color;
@@ -18,9 +21,5 @@
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-.no-scroll {
     overflow: hidden;
 }

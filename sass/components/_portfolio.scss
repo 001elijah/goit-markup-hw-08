@@ -7,6 +7,9 @@
     justify-content: center;
     margin-bottom: 50px;
     gap: 8px;
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+    }
 }
 
 .portfolio__filter-button {

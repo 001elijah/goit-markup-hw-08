@@ -43,9 +43,13 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform $transition-time-and-cubic;
     @media screen and (max-width: 767px) {
-        width: calc(100% - 15px);
+        max-width: calc(100% - 15px);
         height: auto;
         max-height: calc(100% - 10px);
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 450px;
+        height: 609px;
     }
 }
 
@@ -96,6 +100,10 @@
         display: inline-block;
         width: 100%;
     }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: inline-block;
+        width: 100%;
+    }
 }
 
 .modal__wrap {
@@ -107,6 +115,9 @@
     @media screen and (max-width: 767px) {
         width: 100%;
         height: auto;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 100%
     }
 }
 
@@ -215,7 +226,7 @@
     letter-spacing: 0.03em;
 
     color: #757575;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         font-size: 12px;
     }
 }

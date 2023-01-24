@@ -38,6 +38,10 @@ video {
   display: block;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .page {
   margin: 0;
   background-color: #FFFFFF;
@@ -58,10 +62,6 @@ video {
   -webkit-clip-path: inset(100%);
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.no-scroll {
   overflow: hidden;
 }
 
@@ -270,6 +270,7 @@ video {
   .header__contact-link {
     padding-top: 0;
     padding-bottom: 0;
+    font-size: 12px;
   }
 }
 
@@ -344,6 +345,7 @@ video {
   width: 100vw;
   height: 100vh;
   background-color: #fff;
+  z-index: 5;
 }
 
 .mob-menu__nav-item:not(:last-child) {
@@ -359,6 +361,10 @@ video {
   color: #212121;
 }
 
+.mob-menu__page--current {
+  color: #2196F3;
+}
+
 .mob-menu__contact-tel {
   text-decoration: none;
   font-weight: 500;
@@ -366,6 +372,11 @@ video {
   line-height: 1.1764705882;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+@media screen and (max-width: 376px) {
+  .mob-menu__contact-tel {
+    font-size: 27px;
+  }
 }
 
 .mob-menu__contact-item:not(:last-child) {
@@ -702,8 +713,7 @@ video {
 
 .team {
   max-width: 480px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
   background-color: #F5F4FA;
   margin-left: auto;
   margin-right: auto;
@@ -718,6 +728,7 @@ video {
   .team {
     max-width: 1600px;
     width: auto;
+    padding: 94px 0;
   }
 }
 
@@ -735,6 +746,7 @@ video {
   .team__title {
     font-size: 36px;
     line-height: 1.1666666667;
+    margin-bottom: 50px;
   }
 }
 
@@ -849,8 +861,7 @@ video {
 
 .customers {
   max-width: 480px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -864,6 +875,7 @@ video {
   .customers {
     max-width: 1600px;
     width: auto;
+    padding: 94px 0;
   }
 }
 
@@ -881,6 +893,7 @@ video {
 }
 @media screen and (min-width: 1200px) {
   .customers__title {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.1666666667;
   }
@@ -908,8 +921,6 @@ video {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
   min-width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
@@ -924,6 +935,11 @@ video {
 .customers__card:hover, .customers__card:focus {
   border-color: #2196F3;
   color: #2196F3;
+}
+@media screen and (max-width: 400px) {
+  .customers__card {
+    min-width: 130px;
+  }
 }
 @media screen and (min-width: 768px) {
   .customers__card {
@@ -1207,23 +1223,23 @@ video {
 }
 
 ::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 ::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 :-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 ::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 ::placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer__subscribe-button {
@@ -1308,9 +1324,15 @@ video {
 }
 @media screen and (max-width: 767px) {
   .modal {
-    width: calc(100% - 15px);
+    max-width: calc(100% - 15px);
     height: auto;
     max-height: calc(100% - 10px);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
   }
 }
 
@@ -1362,6 +1384,12 @@ video {
     width: 100%;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal__title {
+    display: inline-block;
+    width: 100%;
+  }
+}
 
 .modal__wrap {
   margin: 0 auto;
@@ -1372,6 +1400,11 @@ video {
   .modal__wrap {
     width: 100%;
     height: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal__wrap {
+    width: 100%;
   }
 }
 
@@ -1466,7 +1499,7 @@ video {
   letter-spacing: 0.03em;
   color: #757575;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .modal__form-policy {
     font-size: 12px;
   }
@@ -1543,6 +1576,12 @@ video {
           justify-content: center;
   margin-bottom: 50px;
   gap: 8px;
+}
+@media screen and (max-width: 767px) {
+  .portfolio__filter {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .portfolio__filter-button {

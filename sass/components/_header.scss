@@ -123,6 +123,7 @@
     @media screen and (max-width: 1199px) {
         padding-top: 0;
         padding-bottom: 0;
+        font-size: 12px;
     }
 }
 
@@ -185,6 +186,7 @@
     width: 100vw;
     height: 100vh;
     background-color: #fff;
+    z-index: 5;
 }
 .mob-menu__nav-item:not(:last-child) {
     margin-bottom: 32px;
@@ -199,6 +201,9 @@
     
     color: #212121;
 }
+.mob-menu__page--current {
+    color: $accent-color;
+}
 .mob-menu__contact-tel {
     text-decoration: none;
     font-weight: 500;
@@ -206,6 +211,9 @@
     line-height: calc(40/34);
     letter-spacing: 0.02em;
     color: #2196F3;
+    @media screen and (max-width: 376px) {
+        font-size: 27px;
+    }
 }
 .mob-menu__contact-item:not(:last-child) {
     margin-bottom: 32px;
